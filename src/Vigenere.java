@@ -33,7 +33,8 @@ public class Vigenere {
             
         }
         
-        for (j = 0; j < key.length(); j++){
+        
+        for (j = 0; j < message.length(); j++){
             //converting the key to range 0-25
             int keyChar = key.charAt(j) - 65;
             //converting the message to range 0-25
