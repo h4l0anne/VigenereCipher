@@ -36,11 +36,12 @@ public class Vigenere {
         
         for (j = 0; j < message.length(); j++){
             //converting the key to range 0-25
-            int keyChar = key.charAt(j) - 65;
+            int keyChar = key.charAt(j);
             //converting the message to range 0-25
-            int msgChar = message.charAt(j) - 65;
+            int msgChar = message.charAt(j);
             //add the index of key to add char to msgChar
             char encodedChar = (char)((msgChar + keyChar) % 26 + 65);
+            
             
             encoded += encodedChar;
             
